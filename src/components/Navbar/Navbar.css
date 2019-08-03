@@ -1,0 +1,17 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+
+h2 {
+	margin-left: 5%;
+}
+
+p {
+	margin-right: 5%;
+	font-weight: 600;
+}
