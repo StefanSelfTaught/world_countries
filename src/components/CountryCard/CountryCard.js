@@ -1,21 +1,21 @@
 import React from 'react';
 import './CountryCard.css';
 
-const CountryCard = () => {
+const CountryCard = props => {
   return (
     <div className='country-card'>
-      <img src='https://source.unsplash.com/random/200x200' alt='text' />
+      <img src={props.img} alt='text' />
       <div className='info'>
-        <h3>Germany</h3>
+        <h3>{props.name}</h3>
         <ul>
           <li>
-            Population: <span>81,770,900</span>
+            Population: <span>{props.population}</span>
           </li>
           <li>
-            Region: <span>Europe</span>
+            Region: <span>{props.region}</span>
           </li>
           <li>
-            Capital: <span>Berlin</span>
+            Capital: <span>{props.capital}</span>
           </li>
         </ul>
       </div>

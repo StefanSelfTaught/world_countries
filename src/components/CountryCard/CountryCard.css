@@ -5,12 +5,12 @@
   border-radius: 10px;
   font-size: 14px;
   flex-basis: 250px;
+  margin-bottom: 30px;
 }
 
 img {
   width: 100%;
-  padding: 0;
-  height: 130px;
+  height: 160px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
