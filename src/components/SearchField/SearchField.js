@@ -2,11 +2,15 @@ import React from 'react';
 import './SearchField.css';
 import Filter from '../Filter/Filter';
 
-const SearchField = () => {
+const SearchField = props => {
   return (
     <div className='input-container'>
-      <i class='fas fa-search' />
-      <input type='text' placeholder='Search for a country...' />
+      <i className='fas fa-search' />
+      <input
+        onChange={props.searchChange}
+        type='text'
+        placeholder='Search for a country...'
+      />
       <Filter />
     </div>
   );
