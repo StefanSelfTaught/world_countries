@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/StefanSelfTaught/world_countries/static/css/main.b69ba5e0.chunk.css",
-    "main.js": "/StefanSelfTaught/world_countries/static/js/main.3845f2fe.chunk.js",
-    "main.js.map": "/StefanSelfTaught/world_countries/static/js/main.3845f2fe.chunk.js.map",
-    "runtime~main.js": "/StefanSelfTaught/world_countries/static/js/runtime~main.83d2c025.js",
-    "runtime~main.js.map": "/StefanSelfTaught/world_countries/static/js/runtime~main.83d2c025.js.map",
-    "static/js/2.91b7b231.chunk.js": "/StefanSelfTaught/world_countries/static/js/2.91b7b231.chunk.js",
-    "static/js/2.91b7b231.chunk.js.map": "/StefanSelfTaught/world_countries/static/js/2.91b7b231.chunk.js.map",
-    "index.html": "/StefanSelfTaught/world_countries/index.html",
-    "precache-manifest.ee3a87b35413cc2e187bf8694448bfe8.js": "/StefanSelfTaught/world_countries/precache-manifest.ee3a87b35413cc2e187bf8694448bfe8.js",
-    "service-worker.js": "/StefanSelfTaught/world_countries/service-worker.js",
-    "static/css/main.b69ba5e0.chunk.css.map": "/StefanSelfTaught/world_countries/static/css/main.b69ba5e0.chunk.css.map"
+    "main.css": "/world_countries/static/css/main.b69ba5e0.chunk.css",
+    "main.js": "/world_countries/static/js/main.1b0825d8.chunk.js",
+    "main.js.map": "/world_countries/static/js/main.1b0825d8.chunk.js.map",
+    "runtime~main.js": "/world_countries/static/js/runtime~main.7a3e2eba.js",
+    "runtime~main.js.map": "/world_countries/static/js/runtime~main.7a3e2eba.js.map",
+    "static/js/2.91b7b231.chunk.js": "/world_countries/static/js/2.91b7b231.chunk.js",
+    "static/js/2.91b7b231.chunk.js.map": "/world_countries/static/js/2.91b7b231.chunk.js.map",
+    "index.html": "/world_countries/index.html",
+    "precache-manifest.e0ffe6eab4ef968cf65729b0be96ad2b.js": "/world_countries/precache-manifest.e0ffe6eab4ef968cf65729b0be96ad2b.js",
+    "service-worker.js": "/world_countries/service-worker.js",
+    "static/css/main.b69ba5e0.chunk.css.map": "/world_countries/static/css/main.b69ba5e0.chunk.css.map"
   }
 }
