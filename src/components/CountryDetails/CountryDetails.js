@@ -1,11 +1,13 @@
 import React, { Fragment, Component } from 'react';
 import Navbar from '../Navbar/Navbar';
+import Spinner from '../Spinner/Spinner';
 import './CountryDetails.css';
 
 class CountryDetails extends Component {
 
   state = {
-    specificCountry: []
+    specificCountry: [],
+    isLoaded: false,
   }
 
   componentDidMount() {
@@ -14,7 +16,8 @@ class CountryDetails extends Component {
       .then(resp => resp.json())
       .then(data =>
         this.setState({
-          specificCountry: data
+          specificCountry: data,
+          isLoaded: true
         })
       )
   }
@@ -24,6 +27,7 @@ class CountryDetails extends Component {
   }
 
   render(){
+    const { isLoaded } = this.state;
     let name, nativeName, population, region, subregion, capital, topLevelDomain, currencies, languages, img;
     this.state.specificCountry.map(country => {
       name = country.name;
@@ -37,7 +41,11 @@ class CountryDetails extends Component {
       currencies = country.currencies[0].code;
       languages = country.languages.map(lng => lng.name);
     })
-    return (
+
+    if(!isLoaded){
+      return <Spinner />
+    } else {
+      return (
       <Fragment>
         <Navbar />
         <div className="detailsContainer">
@@ -65,7 +73,8 @@ class CountryDetails extends Component {
           </div>
         </div>
       </Fragment>
-    )
+       )
+    }
   }
 };
 
