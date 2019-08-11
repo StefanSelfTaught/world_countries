@@ -3,6 +3,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Filters from '../../components/SearchField/Filters';
 import CountryCards from '../CountryCards/CountryCards';
 import ErrorBoundry from '../../components/ErrorBoundry';
+import Spinner from '../../components/Spinner/Spinner';
 
 const options = [
   { value: 'all', label: 'All Countries' },
@@ -72,7 +73,7 @@ class Countries extends Component {
 
     let countries;
     !isLoaded
-      ? (countries = <h1 style={{textAlign: 'center'}}>Loading...</h1>)
+      ? (countries = <Spinner />)
       : (countries = <CountryCards countries={filteredCountries} />);
 
     if (error) {
