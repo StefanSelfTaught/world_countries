@@ -1,24 +1,30 @@
 import React from 'react';
 import './CountryCard.css';
+import { Link } from 'react-router-dom';
 
 const CountryCard = props => {
   return (
     <div className='country-card'>
+    <Link
+      className="link" 
+      to={`/countries/${props.name}`}
+    >
       <img src={props.img} alt='text' />
       <div className='info'>
         <h3>{props.name}</h3>
         <ul>
           <li>
-            Population: <span>{props.population}</span>
+            <span>Population</span>: {props.population}
           </li>
           <li>
-            Region: <span>{props.region}</span>
+            <span>Region</span>: {props.region}
           </li>
           <li>
-            Capital: <span>{props.capital}</span>
+            <span>Capital</span>: {props.capital}
           </li>
         </ul>
       </div>
+      </Link>
     </div>
   );
 };
