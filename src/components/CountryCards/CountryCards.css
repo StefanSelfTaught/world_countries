@@ -6,3 +6,10 @@
   margin: auto;
   flex-direction: row;
 }
+
+@media (max-width: 872px) {
+	.grid {
+		justify-content: space-around;
+	}
+}
+

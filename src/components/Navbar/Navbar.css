@@ -16,3 +16,27 @@ nav {
 p {
   font-weight: 600;
 }
+
+i {
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    font-size: 1.3rem;
+  }
+
+  i {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    font-size: 1.1rem;
+  }
+
+  i {
+    font-size: 1.1rem;
+  }
+}
