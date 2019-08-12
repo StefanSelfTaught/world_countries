@@ -1,7 +1,7 @@
 nav {
   height: 20%;
   background-color: hsl(0, 0%, 100%);
-  box-shadow: 0px 2px 10px 3px hsla(0, 0%, 95%, 0.918);
+  box-shadow: 0px .2rem .1rem .3rem hsla(0, 0%, 95%, 0.918);
 }
 
 .container {
@@ -10,6 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1.6rem;
 }
 
 p {

@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
-const app = <Router><App /></Router>
+const app = <Router basename="/countries"><App /></Router>
 
 ReactDOM.render(app, document.getElementById('root'));
 

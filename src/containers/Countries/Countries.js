@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Filters from '../../components/SearchField/Filters';
-import CountryCards from '../CountryCards/CountryCards';
+import CountryCards from '../../components/CountryCards/CountryCards';
 import ErrorBoundry from '../../components/ErrorBoundry';
 import Spinner from '../../components/Spinner/Spinner';
 
@@ -24,7 +24,7 @@ class Countries extends Component {
   };
 
   componentDidMount() {
-    const url = 'https://restcountries.eu/rest/v2/all';
+    const url = 'https://restcountries.eu/rest/v2/all?fields=name;capital;population;region;flag';
     fetch(url)
       .then(resp => resp.json())
       .then(data =>
@@ -77,7 +77,7 @@ class Countries extends Component {
       : (countries = <CountryCards countries={filteredCountries} />);
 
     if (error) {
-      return <h1>Error: Something went wrong </h1>;
+      return <h1>Error: Something went wrong</h1>;
     } else {
       return (
         <Fragment>
