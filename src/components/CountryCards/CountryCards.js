@@ -1,6 +1,6 @@
 import React from 'react';
 import './CountryCards.css';
-import CountryCard from '../../components/CountryCard/CountryCard';
+import CountryCard from '../CountryCard/CountryCard';
 
 const CountryCards = props => {
   return (
