@@ -23,6 +23,7 @@ img {
   height: 15rem;
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
+  object-fit: cover;
 }
 
 ul {
