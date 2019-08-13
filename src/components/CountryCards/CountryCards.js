@@ -11,7 +11,7 @@ const CountryCards = props => {
             img={flag}
             key={name}
             name={name}
-            population={population}
+            population={population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             region={region}
             capital={capital}
           />

@@ -9,10 +9,6 @@
   transition: transform 0.2s ease;
 }
 
-.country-card:not(:nth-child(4n)){
-  margin-right: 2rem;
-}
-
 .country-card:hover {
   transform: scale(1.05);
   cursor: pointer;
@@ -44,32 +40,5 @@ ul {
   color: black;
 }
 
-@media (max-width: 1194px) {
-  .country-card:not(:nth-child(4n)){
-    margin-right: 0;
-  }
-
-  .country-card:not(:nth-child(3n)){
-    margin-right: 2rem;
-  }
-}
-
-@media (max-width: 895px) {
-  .country-card:not(:nth-child(3n)){
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width: 872px) {
-  .country-card {
-    margin-right: 2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .country-card {
-    font-size: 1.3rem;
-  }
-}
 
 

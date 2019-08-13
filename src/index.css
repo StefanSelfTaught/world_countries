@@ -14,3 +14,29 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   background-color: hsl(0, 0%, 98%);
 }
+
+ul {
+	list-style: none !important;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 1440px) {
+	html { font-size: 62.5% };
+}
+
+@media screen and (max-width: 1200px) {
+	html { font-size: 56.25% };
+}
+
+@media screen and (max-width: 600px) {
+	html { font-size: 50% };
+}
+
+@media screen and (min-width: 1640px) {
+	html { font-size: 80% };
+}
+
+@media screen and (min-width: 1980px) {
+	html { font-size: 90% };
+}
