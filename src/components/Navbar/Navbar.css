@@ -17,8 +17,9 @@ p {
   font-weight: 600;
 }
 
-i {
+.iconMoon {
   font-size: 1.6rem;
+  margin-right: 0.3rem;
 }
 
 @media screen and (max-width: 520px) {
@@ -26,7 +27,7 @@ i {
     font-size: 1.3rem;
   }
 
-  i {
+  .iconMoon {
     font-size: 1.3rem;
   }
 }
@@ -36,7 +37,7 @@ i {
     font-size: 1.1rem;
   }
 
-  i {
+  .iconMoon {
     font-size: 1.1rem;
   }
 }

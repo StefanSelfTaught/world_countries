@@ -1,3 +1,4 @@
+
 .lds-dual-ring {
   display: inline-block;
   width: 64px;
@@ -5,7 +6,7 @@
   position: absolute;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 .lds-dual-ring:after {
   content: " ";

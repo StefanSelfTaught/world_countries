@@ -1,13 +1,14 @@
 import React, { Fragment, Component } from 'react';
 import Navbar from '../Navbar/Navbar';
-import Spinner from '../Spinner/Spinner';
 import './CountryDetails.css';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 class CountryDetails extends Component {
 
   state = {
     specificCountry: [],
-    isLoaded: false,
   }
 
   componentDidMount() {
@@ -17,7 +18,6 @@ class CountryDetails extends Component {
       .then(data =>
         this.setState({
           specificCountry: data,
-          isLoaded: true
         })
       )
   }
@@ -27,34 +27,31 @@ class CountryDetails extends Component {
   }
 
   render(){
-    const { isLoaded, specificCountry } = this.state;
+    const { specificCountry } = this.state;
     let name, nativeName, population, region, subregion, capital, topLevelDomain, currencies, languages, img, borders, timezones;
     specificCountry.map(country => {
      return (
       name = country.name,
       img = country.flag,
       nativeName = country.nativeName,
-      population = country.population,
+      population = country.population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","),
       region = country.region,
       subregion = country.subregion,
       capital = country.capital,
       topLevelDomain = country.topLevelDomain,
       currencies = country.currencies[0].code,
       languages = country.languages.map(lng => lng.name + ', '),
-      timezones = country.timezones.map(timezone => timezone),
+      timezones = country.timezones[0],
       borders = country.borders.map(border => border + ', ')
       )
     })
 
-    if(!isLoaded){
-      return <Spinner />
-    } else {
-      return (
+    return (
       <Fragment>
         <Navbar />
         <div className="detailsContainer">
           <button className="btn" onClick={this.handleClick}>
-            <i className="fas fa-arrow-left"></i>
+            <FontAwesomeIcon icon={faArrowLeft} className="iconArrow"/>
             Back
           </button>
           <div className="info-main">
@@ -83,7 +80,6 @@ class CountryDetails extends Component {
       </Fragment>
       )
     }
-  }
 };
 
 export default CountryDetails;

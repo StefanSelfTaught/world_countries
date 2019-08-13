@@ -8,12 +8,16 @@
   border-radius: .5rem;
   width: 10.1rem;
   height: 3.4rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  position: relative;
   transition: transform .2s;
 }
 
-.btn i {
-	padding: 0 1rem;
+.iconArrow {
+	position: absolute;
+	left: 2.7rem;
+	top: 0.9rem;
+	font-size: 1.5rem;
 }
 
 .btn:hover{
@@ -37,6 +41,7 @@
 	border-bottom-right-radius: .5rem;
 	border-bottom-left-radius: .5rem;
 	transition: transform .2s;
+	object-fit: cover;
 }
 
 .info-main img:hover {
@@ -53,7 +58,7 @@ span {
 
 .info-main {
 	display: grid;
-	grid-template-columns: 1.5fr 1fr 1fr;
+	grid-template-columns: 1.7fr 1fr 1fr;
 	justify-content: center;
 	grid-gap: 3rem;
 	justify-items: center;
@@ -68,5 +73,72 @@ span {
 	margin-bottom: 1.2rem;
 }
 
+@media screen and (max-width: 900px) {
+	.info1, .info2 {
+		font-size: 1.3rem;
+	}
+}
 
+@media screen and (max-width: 800px) {
+	.info1, .info2 {
+		font-size: 1.2rem;
+	}
+
+	.info-main li {
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.btn {
+		font-size: 1.3rem;
+		width: 9rem;
+		height: 3rem;
+	}
+
+	.info-main li {
+		margin-bottom: 1.2rem;
+	}
+
+	.iconArrow {
+		font-size: 1.3rem;
+		left: 2.3rem;
+	}
+
+	.info-main {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		justify-content: center;
+		grid-gap: 3rem;
+		justify-items: flex-start;
+		align-items: flex-start;
+	}
+	
+	img {
+		grid-column-start: 1;
+  	grid-column-end: span 1;
+	}
+
+	.info2 {
+		grid-column-start: 1;
+  	grid-column-end: span 2;
+	}
+
+	.info1 {
+		grid-column-start: 1;
+  	grid-column-end: span 2;
+	}
+
+	.detailsContainer {
+		display: grid;
+	  max-width: 90%;
+	  margin: auto;
+		grid-template-rows: 0.2fr 0.2fr; 
+	}
+
+	.info-main ul {
+		margin-top: 0rem;
+	}	
+}
 
