@@ -1,5 +1,4 @@
 .country-card {
-  background-color: #ffffff;
   box-shadow: 0px 0px 1rem 1rem hsl(0, 0%, 95%);
   padding-bottom: 1.7rem;
   border-radius: .5rem;
@@ -39,6 +38,18 @@ ul {
 .link {
   text-decoration: none;
   color: black;
+}
+
+@media screen and (max-width: 600px){
+  .country-card {
+    font-size: 1.55rem !important;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .country-card {
+    flex-basis: 26rem;
+  }
 }
 
 
