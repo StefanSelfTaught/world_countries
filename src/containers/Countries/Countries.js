@@ -15,13 +15,17 @@ const options = [
 ];
 
 class Countries extends Component {
-  state = {
-    countries: [],
-    filter: '',
-    error: null,
-    isLoaded: false,
-    selectedOption: { value: 'all', label: 'All countries' },
-  };
+    constructor(props){
+      super(props)
+      
+      this.state = {
+        countries: [],
+        filter: '',
+        error: null,
+        isLoaded: false,
+        selectedOption: { value: 'all', label: 'All countries' },
+      };
+  }
 
   componentDidMount() {
     const url = 'https://restcountries.eu/rest/v2/all?fields=name;capital;population;region;flag';

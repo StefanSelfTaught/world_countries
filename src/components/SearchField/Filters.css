@@ -22,6 +22,7 @@ input {
   color: hsl(0, 0%, 70%);
   padding: 1.5rem;
   text-indent: 5rem;
+  border: 0.5px solid #cccccc;
 }
 
 input::placeholder {
@@ -46,6 +47,7 @@ input::placeholder {
   box-shadow: 0rem 0rem 1rem .5rem hsl(0, 0%, 95%);
   color: hsl(0, 0%, 52%);
 }
+
 
 @media screen and (max-width: 1000px) {
   input {
@@ -92,14 +94,12 @@ input::placeholder {
   input {
     width: 100%;
     margin-top: 0;
-    font-size: 1.3rem;
   }
 
   .select {
-    width: 60%;
+    width: 50%;
     margin-top: 4rem;
     align-self: flex-start;
-    font-size: 1.3rem;
   }
   
   .fa-search {

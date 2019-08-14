@@ -1,6 +1,5 @@
 nav {
   height: 20%;
-  background-color: hsl(0, 0%, 100%);
   box-shadow: 0px .2rem .1rem .3rem hsla(0, 0%, 95%, 0.918);
 }
 
@@ -22,22 +21,3 @@ p {
   margin-right: 0.3rem;
 }
 
-@media screen and (max-width: 520px) {
-  .container {
-    font-size: 1.3rem;
-  }
-
-  .iconMoon {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .container {
-    font-size: 1.1rem;
-  }
-
-  .iconMoon {
-    font-size: 1.1rem;
-  }
-}

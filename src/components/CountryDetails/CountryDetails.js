@@ -1,7 +1,6 @@
 import React, { Fragment, Component } from 'react';
 import Navbar from '../Navbar/Navbar';
 import './CountryDetails.css';
-import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
@@ -64,7 +63,7 @@ class CountryDetails extends Component {
                 <li><span>Region:</span> {region}</li>
                 <li><span>Sub Region:</span> {subregion}</li>
                 <li><span>Capital:</span> {capital}</li>
-                <li><span>Border Countries:</span></li>
+                <li><span>Border Countries:</span> {borders}</li>
               </ul>
             </div>
             <div className="info2">

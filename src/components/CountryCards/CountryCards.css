@@ -13,3 +13,10 @@
 	}
 }
 
+@media (max-width: 490px) {
+	.grid {
+		justify-content: center;
+		max-width: 90%;
+	}
+}
+
