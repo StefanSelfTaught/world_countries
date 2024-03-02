@@ -28,7 +28,7 @@ class Countries extends Component {
   }
 
   componentDidMount() {
-    const url = 'https://restcountries.eu/rest/v2/all?fields=name;capital;population;region;flag';
+    const url = 'https://restcountries.com/rest/v2/all?fields=name;capital;population;region;flag';
     fetch(url)
       .then(resp => resp.json())
       .then(data =>
