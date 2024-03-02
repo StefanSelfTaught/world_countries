@@ -12,7 +12,7 @@ class CountryDetails extends Component {
 
   componentDidMount() {
     const { match: { params } } = this.props;
-    fetch(`https://restcountries.eu/rest/v2/name/${params.countryName}?fullText=true`)
+    fetch(`https://restcountries.com/rest/v2/name/${params.countryName}?fullText=true`)
       .then(resp => resp.json())
       .then(data =>
         this.setState({
